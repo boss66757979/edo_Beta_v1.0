@@ -1,6 +1,8 @@
-#wechat mini-program:edo reader<br>
-##file structure for this mini-program <br>
-##**1.pages:**<br>
+wechat mini-program:edo reader<br>
+===
+file structure for mini-program <br>
+---
+**1.pages:**<br>
 **index:**<br>
 Total index of all project, the first UI<br><br>
 **my:**<br>
@@ -11,11 +13,13 @@ Read UI, with the book index, click one of those books in book index to read it<
 Examine user foreign language level<br><br>
 **word:**<br>
 Record the new & important & unknown words<br>
-##**2.clouds:**<br>
+**2.clouds:**<br>
 Login:User login requirement, the wechat account authorize<br>
-##**3.icon:**<br>
+**3.icon:**<br>
 All icons used in this mini-program <br>
-##mini-program usage:<br>
+---
+**mini-program usage** <br>
+---
 **1. user login:** wechat account authorize<br>
 ![login-img](readme_img/login.png)<br><br>
 <br>
@@ -42,5 +46,5 @@ write down the annotate text<br><br>
 **5. word card:** display record words<br><br>
 ![login-img](readme_img/word.png)<br><br>
 <br>
-**5. personal center:** display user personal info<br><br>
+**6. personal center:** display user personal info<br><br>
 ![login-img](readme_img/personal_center.png)<br><br>
