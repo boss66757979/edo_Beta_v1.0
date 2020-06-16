@@ -1,0 +1,18 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__bd">
+		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+			<form class="weui-search-bar__form">
+				<view class="weui-search-bar__box">
+					<icon class="weui-icon-search"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <text class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></text>
+				</view>
+				<label class="weui-search-bar__label" bindtap="showInput">
+					<icon class="weui-icon-search"></icon>
+                    <text class="weui-search-bar__text">搜索</text>
+				</label>
+			</form>
+            <view class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+		</view>
+	</view>
+</view>

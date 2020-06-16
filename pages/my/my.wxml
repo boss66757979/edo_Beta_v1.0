@@ -1,0 +1,52 @@
+<view class="container">
+    <view class="userinfo">
+        <view>
+            <button open-type="getUserInfo"
+            bindgetuserinfo="onGetUserInfo" 
+            size="default" 
+            type="default"
+            class="userinfo-avatar" 
+            style="background-image: url({{avatarUrl}})">
+            </button>
+        </view>
+        <view>
+            <text>{{username}}</text>
+        </view>
+    </view>
+    <view class="info_list">
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ myData }}" wx:key="text" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateToData">
+                <view class="weui-cell__hd">
+                    <image class="cell-image-style" src="{{ item.icon }}"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <text>{{ item.text }}</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="text"
+                data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateToitems">
+                <view class="weui-cell__hd">
+                    <image class="cell-image-style" src="{{ item.icon }}"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <text>{{ item.text }}</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ settings }}" wx:key="text" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateToSeeting">
+                <view class="weui-cell__hd">
+                    <image class="cell-image-style" src="{{ item.icon }}"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <text>{{ item.text }}</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+    </view> 
+</view>

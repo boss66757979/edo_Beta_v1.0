@@ -1,0 +1,21 @@
+<view>
+    <view>
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+    <view class="emptyfilebox">
+        <block wx:if="{{books.length < 1}}" >
+            <image src="../../icon/emptyfile.png" style="margin-top:350rpx; width:170rpx;height:170rpx;"></image>
+        </block>
+    </view>
+    <scroll-view wx:for="{{books}}" wx:key="_id" class="scrollview" data-msg='click' scroll-y="true" enable-flex='true' data-bookname="{{item.BookName}}">
+        <view data-index="{{index}}">
+            <view data-index="{{index}}" bindtap='onReadBook' class="flex_row" data-bookname="{{item.BookName}}">
+                <text>{{item.BookName}}</text>
+                <view data-index="{{index}}" catchtap = "delItem" class="inner del">Del</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="addfile">
+        <image bindtap="getfile" src="../../icon/importButton.png"></image>
+    </view>
+</view>

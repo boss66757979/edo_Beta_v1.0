@@ -1,0 +1,9 @@
+@import '/style/weui.wxss';
+
+text{
+    font-family: MicroSoft Yahei;
+    font-size: 32rpx;
+}
+page{
+    background-color: #F9F9F9;
+}

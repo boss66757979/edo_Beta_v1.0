@@ -1,0 +1,58 @@
+.addfile {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  width:92%;
+  height:15%;
+  justify-content:flex-end;
+}
+.addfile image {
+  width:50px;
+  height:50px;
+}
+.emptyfilebox{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.scrollview{
+  display:flex;
+  flex-direction: column;
+  box-shadow: 3rpx 3rpx 4rpx rgba(16, 85, 235, 0.5);
+  width: 92%;
+  margin: 20rpx auto 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.scrollview:last-child{
+  border-bottom: 2rpx solid #eee;
+}
+.flex_row{
+  height: 150rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+.inner{
+  position: absolute;
+  top:0;
+}
+.inner.del{
+  background-color:	#87CEEB;
+  width:50rpx;
+  height:50rpx;
+  text-align: center;
+  z-index: 4;
+  right: 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 19rpx;
+}
+.thumb{
+  width: 200px;
+  height: 200px;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+}

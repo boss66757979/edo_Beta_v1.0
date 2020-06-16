@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/readbook/readindex",
+    "pages/readbook/read/read",
+    "pages/word/word",
+    "pages/test/test",
+    "pages/my/my",
+    "pages/my/myData/myData",
+    "pages/my/setting/setting",
+    "pages/my/levelSelect/levelSelect",
+    "pages/my/testReport/testReport",
+    "pages/my/wordFrequency/wordFrequency"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarTitleText": "Edo阅读",
+    "navigationBarBackgroundColor": "#F9F9F9",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+      "pagePath": "pages/readbook/readindex",
+      "text": "阅读",
+      "iconPath": "icon/gread.png",
+      "selectedIconPath": "icon/read.png"
+      }, 
+      {
+        "pagePath":  "pages/word/word",
+        "text": "单词",
+        "iconPath": "icon/gword.png",
+        "selectedIconPath": "icon/word.png"
+      },
+      {
+        "pagePath":  "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/gmy.png",
+        "selectedIconPath": "icon/my.png"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.0",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

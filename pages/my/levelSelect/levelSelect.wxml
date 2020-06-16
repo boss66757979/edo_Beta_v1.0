@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="momo">
+        <image  style=" width: 100px; height: 100px; background-color: #eeeeee; " mode="scaleToFill" src='/icon/momo.png' show-menu-by-longpress='true'> </image>
+    </view>
+    <view class="info_list">
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ myData }}" wx:key="text"  data-index="{{ index }}" bindtap="navigateToData">
+                <view class="weui-cell__bd">
+                    <text>{{ item.text }}</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ items }}" wx:key="text"
+                 data-index="{{ index }}" bindtap="navigateToitems">
+
+                <view class="weui-cell__bd">
+                    <text>{{ item.text }}</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{ settings }}" wx:key="text" data-path="{{ item.path }}" data-index="{{ index }}" bindtap="navigateToSeeting">
+
+                <view class="weui-cell__bd">
+                    <text>{{ item.text }}</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+        </view>
+    </view> 
+</view>

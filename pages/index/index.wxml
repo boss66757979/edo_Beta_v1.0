@@ -1,0 +1,6 @@
+<view class='container' style="height:{{windowHeight}}rpx;">   
+    <open-data style="width:130rpx;height:130rpx;" type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data>
+    <button class='auth' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo"  bindtap="enter" style="border-style:none;" plain="true">授权登录</button>
+    <text wx:else>请升级微信版本</text>
+</view>

@@ -1,0 +1,11 @@
+<view class="item-box">
+  <view class="items">
+    <scroll-view wx:for="{{wordlist}}"  wx:key="WordId"  class="item" data-msg='click'>
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}" class="inner txt">
+          <text bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE"  data-index="{{index}}" class="nametxt">{{item.EnglishMeaning}}</text>
+          <text bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE"  data-index="{{index}}" class="paraphrasetxt">{{item.ChineseMeaning}}</text>
+      </view>
+      <view data-index="{{index}}" catchtap = "delItem" class="inner del">删除</view>
+    </scroll-view>
+  </view>
+</view>
