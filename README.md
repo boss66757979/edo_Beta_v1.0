@@ -27,24 +27,24 @@ All icons used in this mini-program <br>
 ![choose-book-img](readme_img/add_book.png)<br><br>
 <br>
 **3. choose book:** choose a book to read<br>
-![choose-book-img](readme_img/choose_book.png)<br><br>
+![img](readme_img/choose_book.png)<br><br>
 <br>
 **4. annotate or train :** press button to annotate or training language model<br><br>
 <br>
 **train:** press button<br><br>
-![choose-book-img](readme_img/train_button.png)<br><br>
+![img](readme_img/train_button.png)<br><br>
 <br>
 then choose a training type<br><br>
-![choose-book-img](readme_img/train_choose.png)<br><br>
+![img](readme_img/train_choose.png)<br><br>
 <br>
 **annotate:** press button<br><br>
-![choose-book-img](readme_img/annotate_button.png)<br><br>
+![img](readme_img/annotate_button.png)<br><br>
 <br>
 write down the annotate text<br><br>
-![choose-book-img](readme_img/annotate_book.png)<br><br>
+![img](readme_img/annotate_book.png)<br><br>
 <br>
 **5. word card:** display record words<br><br>
-![login-img](readme_img/word.png)<br><br>
+![word-card-img](readme_img/word.png)<br><br>
 <br>
 **6. personal center:** display user personal info<br><br>
-![login-img](readme_img/personal_center.png)<br><br>
+![personal-center-img](readme_img/personal_center.png)<br><br>
