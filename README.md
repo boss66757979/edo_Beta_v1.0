@@ -48,3 +48,4 @@ write down the annotate text<br><br>
 <br>
 **6. personal center:** display user personal info<br><br>
 ![personal-center-img](readme_img/personal_center.png)<br><br>
+---
